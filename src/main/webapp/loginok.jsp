@@ -8,6 +8,9 @@
 </head>
 <body>
 	<%
+		//request 객체안 내용을 빼기전에 utf-8로 셋팅하고 빼기
+		request.setCharacterEncoding("utf-8");
+	
 		String mid = request.getParameter("memberid"); //유저가 입력한 아이디 가져오기
 		String mpw = request.getParameter("memberpassword"); //유저가 입력한 비밀번호 가져오기
 		//select * from member where memberid = ? and memberpw = ?;
